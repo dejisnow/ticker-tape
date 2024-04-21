@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+}
+
+body {
+    
+}
+ul li{
+    list-style-type:none;
+    padding:5px;
+    display:flex;
+    gap:5px;
+    flex-direction:column;
+    
+}
+.container{
+
+ width:100%;
+ height:100px;
+    position:relative ;
+    background-color:#2feed2;
+}
+ul{
+position:absolute ;
+
+    display:flex;
+    overflow-x:scroll;
+    gap:10px;
+    margin-top:20px;
+    background-color:#2feed2;
+    
+}
+.price__list{
+    background-color:#2feed2;
+    text-align:center ;
+    width:100%;
+    position:absolute;
+    animation:ticker 10s linear infinite;
+
+}
+ul li span{
+    color:#e60000;
+    text-align:center;
+    font-weight:600;
+}
+
+
+@keyframes ticker {
+    
+    0%{
+        left:200px;
+        
+    }
+    
+    
+    100%{
+        left:-520px;
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+  
